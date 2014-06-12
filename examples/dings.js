@@ -10,7 +10,11 @@ myApp.directive('scrollOnClick', function() {
                 } else {
                     $target = $elm;
                 }
-                $("body").animate({scrollTop: $target.offset().top}, "slow");
+                /*
+                addition: "html, body" is necessary, because FF takes html, Chrome body.
+                http://stackoverflow.com/questions/19303405/difference-between-html-body-animate-and-body-animate
+                 */
+                $("html, body").animate({scrollTop: $target.offset().top}, "slow");
             });
         }
     }
