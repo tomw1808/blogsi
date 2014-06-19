@@ -18,9 +18,9 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -53,13 +53,14 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#!/">Blogsi</a>
+            <a class="navbar-brand" href="#!/">Zerosoribt</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,21 +71,25 @@
                     <ul class="dropdown-menu">
                         <li><a href="#!/tomo/main">Bookmarks</a></li>
                         <li class="divider"></li>
-                        <li><a href="#!/tomo/angular1">Angular Part 1</a></li>
+                        <li><a href="#!/tomo/coolstuff">Cool Stuff</a></li>
                     </ul>
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>
 
 <!-- Add your site or application content here -->
 <ng-view></ng-view>
 
-<div id="container" class="discussion" ng-if="discussion">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div disqus="disqus_id"></div>
+<div class="discussion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div disqus="disqus_id"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -95,24 +100,42 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2>Always up2date!</h2>
-                <p>Subscribe now and get a notification if there is something new! Right there, for free, in your mailbox!</p>
+
+                <p>Subscribe now and get a notification if there is something new! Right there, for free, in your
+                    mailbox!</p>
                 <!-- Begin MailChimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
 
-                    #mc_embed_signup input{display: inline !important; color:#333;}
-                    #mc_embed_signup form{text-align:center}
-                    #mc_embed_signup input.button {height: 37px}
+                    #mc_embed_signup input {
+                        display: inline !important;
+                        color: #333;
+                    }
+
+                    #mc_embed_signup form {
+                        text-align: center
+                    }
+
+                    #mc_embed_signup input.button {
+                        height: 37px
+                    }
+
                     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                 </style>
                 <div id="mc_embed_signup">
-                    <form action="http://mietenkaufen.us8.list-manage.com/subscribe/post?u=f5be3d1590467a2ab0745ebee&amp;id=cc3a87c64b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <form action="http://mietenkaufen.us8.list-manage.com/subscribe/post?u=f5be3d1590467a2ab0745ebee&amp;id=cc3a87c64b"
+                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                          class="validate" target="_blank" novalidate>
                         <label for="mce-EMAIL">Subscribe to our mailing list</label>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                               placeholder="email address" required>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_f5be3d1590467a2ab0745ebee_cc3a87c64b" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div style="position: absolute; left: -5000px;"><input type="text"
+                                                                               name="b_f5be3d1590467a2ab0745ebee_cc3a87c64b"
+                                                                               tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                  id="mc-embedded-subscribe" class="button"></div>
                     </form>
                 </div>
 
@@ -135,15 +158,18 @@
                            target="_blank"><img src="images/vendor/flat_web_icon_set/color/Facebook.png"></a></li>
                     <li>
                         <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2F0.soribt.com&text=JS%20and%20PHP: http%3A%2F%2F0.soribt.com"
-                           target="_blank" title="Tweet"><img src="images/vendor/flat_web_icon_set/color/Twitter.png"></a></li>
+                           target="_blank" title="Tweet"><img
+                                src="images/vendor/flat_web_icon_set/color/Twitter.png"></a></li>
                     <li><a href="https://plus.google.com/share?url=http%3A%2F%2F0.soribt.com" target="_blank"
-                           title="Share on Google+"><img src="images/vendor/flat_web_icon_set/color/Google+.png"></a></li>
+                           title="Share on Google+"><img src="images/vendor/flat_web_icon_set/color/Google+.png"></a>
+                    </li>
                     <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2F0.soribt.com&title=JS%20and%20PHP"
                            target="_blank" title="Submit to Reddit"><img
                             src="images/vendor/flat_web_icon_set/color/Reddit.png"></a></li>
                     <li>
                         <a href="mailto:?subject=JS%20and%20PHP&body=Tutorials%20and%20Articles%20from%20Real-World%20JS%20and%20PHP%20Applications.%20What%20we%20learned%20from%20our%20work%20is%20what%20you%20get%20here.: http%3A%2F%2F0.soribt.com"
-                           target="_blank" title="Email"><img src="images/vendor/flat_web_icon_set/color/Email.png"></a></li>
+                           target="_blank" title="Email"><img src="images/vendor/flat_web_icon_set/color/Email.png"></a>
+                    </li>
                 </ul>
 
 
