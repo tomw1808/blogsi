@@ -16,6 +16,14 @@ angular
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl'
             })
+            .when('/angular1', {
+                templateUrl: 'views/angular1.html',
+                controller: 'MainCtrl'
+            })
+            .when('/angular2', {
+                templateUrl: 'views/angular2.html',
+                controller: 'MainCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });

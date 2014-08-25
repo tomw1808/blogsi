@@ -17,7 +17,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 4.5em;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /* Side Menu */
@@ -360,4 +360,30 @@ i.scroll:hover {
 }
 .navbar-custom .navbar-link:hover {
     color: #c0c0c0;
+}
+
+
+.tutorialstep {
+    padding: 15px;
+    border-left: 2px solid #699ae6;
+}
+
+/* CALLOUT IMAGES */
+.img-106H {
+    background-image: url(../images/106H.jpg);
+}
+.img-65H {
+    background-image: url(../images/65H.jpg);
+}
+.img-47H {
+    background-image: url(../images/47H.jpg);
+}
+.img-32H {
+    background-image: url(../images/32H.jpg);
+}
+.img-55H {
+    background-image: url(../images/55H.jpg);
+}
+.img-57H {
+    background-image: url(../images/57H.jpg);
 }
