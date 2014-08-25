@@ -1,0 +1,21 @@
+<?php
+// add a custom module directory
+$front = Zend_Controller_Front::getInstance();
+$front->addModuleDirectory(PIMCORE_DOCUMENT_ROOT . "/modules");
+
+$router = $front->getRouter();
+$routeCustom = new Zend_Controller_Router_Route(
+	'todo/:controller/:action/*',
+	array(
+		'module' => 'todo',
+		"controller" => "index",
+		"action" => "index"
+	)
+);
+$router->addRoute('todo', $routeCustom);
+
+$restRoute = new Zend_Rest_Route($front, array(), array('todo'));
+$router->addRoute('rest_todo_router', $restRoute);
+
+//init the autoloader
+Pimcore::initAutoloader();

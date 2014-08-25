@@ -1,0 +1,39 @@
+<?php
+
+class Todo_Plugin_PreflightPlugin extends Zend_Controller_Plugin_Abstract {
+
+
+	public function routeStartup(Zend_Controller_Request_Abstract $request) {
+
+		$this->getResponse()->setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS, PUT', true);
+		$this->getResponse()->setHeader('Access-Control-Allow-Credentials', 'true', true);
+		$this->getResponse()->setHeader('Access-Control-Allow-Origin', '*', true);
+		if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+			//options pre-flight request: no processing needed, just the headers should be sent!
+			$this->getResponse()->setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept', true)->sendHeaders();
+			exit;
+		}
+
+	}
+
+	public function routeShutdown(Zend_Controller_Request_Abstract $request) {
+
+	}
+
+	public function dispatchLoopStartup(
+		Zend_Controller_Request_Abstract $request) {
+
+	}
+
+	public function preDispatch(Zend_Controller_Request_Abstract $request) {
+
+	}
+
+	public function postDispatch(Zend_Controller_Request_Abstract $request) {
+
+	}
+
+	public function dispatchLoopShutdown() {
+
+	}
+}
